@@ -1,0 +1,8 @@
+{% extends 'main/base.html.twig' %}
+
+{{ form_start(form, {'action': path('task'), 'method': POST}) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.someFill) }}
+    {{ form_wiget(form.save) }}
+{{ form_end(form) }}

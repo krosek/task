@@ -1,4 +1,4 @@
-<tr><td><label><input value="{{ user.id }}" name="{{ user.id }}" type="checkbox"></label></td>
+<tr class="{{ loop.index % 2 == 0 ? 'white' :'blue' }}"><td><label><input value="{{ user.id }}" name="{{ user.id }}" type="checkbox"></label></td>
     <td>{{ user.id }}</td><td>{{ user.name }}</td>
     <td>{{ user.email }}</td><td>{{ user.registerdate|date('Y-m-d H:i:s') }}</td>
     <td>{{ user.lastlogin|date('Y-m-d H:i:s') }}</td><td>{{ user.status }}</td></tr>

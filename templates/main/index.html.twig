@@ -42,19 +42,6 @@
                                 <th>userId</th><th>name</th><th>email</th>
                                 <th>registration date</th><th>last login date</th><th>status</th></tr>
                                 {% for user in users %}
-                                    {% if ( loop.index % 2) == 0 %}
-                                        <style>
-                                            tr{
-                                                background-color: #9fcdff;
-                                            }
-                                        </style>
-                                    {% else %}
-                                        <style>
-                                            tr{
-                                                background-color: white;
-                                            }
-                                        </style>
-                                    {% endif %}
                                     {% include 'main/tr.html.twig' %}
                                 {% endfor %}
                         </form>

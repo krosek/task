@@ -1,3 +1,4 @@
-<tr><th><label><input id="checkAll" type="checkbox"></label></th>
-    <th>userId</th><th>name</th><th>email</th>
-    <th>registration date</th><th>last login date</th><th>status</th></tr>
+<tr><td><label><input value="{{ user.id }}" name="{{ user.id }}" type="checkbox"></label></td>
+    <td>{{ user.id }}</td><td>{{ user.name }}</td>
+    <td>{{ user.email }}</td><td>{{ user.registerdate|date('Y-m-d H:i:s') }}</td>
+    <td>{{ user.lastlogin|date('Y-m-d H:i:s') }}</td><td>{{ user.status }}</td></tr>

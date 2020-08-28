@@ -16,7 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -155,6 +155,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598457302863</updated>
       <workItem from="1598457317203" duration="1851000" />
+      <workItem from="1598622177308" duration="3052000" />
     </task>
     <servers />
   </component>
@@ -171,6 +172,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="507" y="87" key="NewPhpClassDialog" timestamp="1598457765768">

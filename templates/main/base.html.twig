@@ -9,8 +9,75 @@
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         {% endblock %}
     </head>
+    <header>
+        {% block header %}
+                <div class="container clearfix">
+                    <h1 id="logo"> Quixotic Design </h1>
+                    <nav>
+                        <a href="">Lorem</a>
+                        <a href="">Ipsum</a>
+                        <a href="">Dolor</a>
+                    </nav>
+                </div>
+        {% endblock %}
+    </header>
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 style="margin-top: 170px;">Hello, world!</h1>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+
+        {% endblock %}
+        <footer>
+            {% block footer %}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque imperdiet consectetur dolor in elementum.</p>
+
+                        </div>
+                        <div class="col-md-2 list">
+                            <ul>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-2 list">
+                            <ul>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md">
+                            <h5><strong>Contact Info</strong></h5>
+                            <p><strong>Adress:</strong> 514 S. Magnolia St.
+                                Orlando, FL 32806 <!-- Random Adress -->
+                            </p>
+                            <p><strong>Email:</strong> email@example.com</p>
+                            <p><strong>Tel.:</strong> (888) 888 8888</p>
+                        </div>
+                    </div>
+                </div>
+
+            {% endblock %}
+        </footer>
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
